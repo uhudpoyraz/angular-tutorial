@@ -19,7 +19,8 @@ export class FilmListComponent implements OnInit {
     console.log(this.filmList.length);
    }
 
-  goToDetailPage(id: string){
+  goToDetailPage(id: string) {
+    console.log(id);
     this.filmService.details(id).subscribe();
   }
 

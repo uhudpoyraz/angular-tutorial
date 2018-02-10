@@ -1,3 +1,43 @@
-<p>
-  film-detail works!
-</p>
+<div class="movie-wrapper">
+  <div class="detail-left">
+    <h1>Pirates of Caribbean</h1>
+    <p>{{ filmDetail.Plot }}</p>
+    <table>
+      <tr>
+        <td>Oyuncular</td>
+        <td>
+						<span>
+							{{ filmDetail.Actors }}
+						</span>
+        </td>
+      </tr>
+      <tr>
+        <td>Yönetmen</td>
+        <td>	{{ filmDetail.Director }}</td>
+      </tr>
+      <tr>
+        <td>Genres</td>
+        <td>
+          {{ filmDetail.Genre }}
+        </td>
+      </tr>
+      <tr>
+        <td>Süre</td>
+        <td>{{ filmDetail.Runtime }}</td>
+      </tr>
+      <tr>
+        <td>Imdb Puanı</td>
+        <td>{{ filmDetail.imdbRating }}</td>
+      </tr>
+      <tr>
+        <td>Yapım Yılı</td>
+        <td>{{ filmDetail.Year }}</td>
+      </tr>
+    </table>
+    <br><br><br>
+
+  </div>
+  <div class="detail-right">
+    <img src="{{ filmDetail.Poster }}">
+  </div>
+</div>

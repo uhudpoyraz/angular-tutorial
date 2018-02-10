@@ -5,9 +5,11 @@
   </div>
   <div class="clearfix"></div>
   <div class="thumbnail" *ngFor="let film of filmList">
+    <a routerLink = "/detail/{{film.imdbID}}">
       <img height="450" width="350" src="{{film.Poster}}">
       <h1>{{film.Title}}</h1>
       <h2>{{film.Year}}</h2>
       <div class="rate">{{film.Type}}</div>
+    </a>
   </div>
 </div>

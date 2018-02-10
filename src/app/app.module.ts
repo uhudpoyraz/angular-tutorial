@@ -8,7 +8,7 @@ import { FilmDetailComponent } from './film-detail/film-detail.component';
 import { FilmListComponent } from './film-list/film-list.component';
 import { LeftMenuComponent } from './left-menu/left-menu.component';
 import { HttpClientModule} from '@angular/common/http';
-
+import { RoutingModule} from './routing/routing.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +20,8 @@ import { HttpClientModule} from '@angular/common/http';
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    RoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

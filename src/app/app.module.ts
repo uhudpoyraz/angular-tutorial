@@ -7,6 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { FilmDetailComponent } from './film-detail/film-detail.component';
 import { FilmListComponent } from './film-list/film-list.component';
 import { LeftMenuComponent } from './left-menu/left-menu.component';
+import { HttpClientModule} from '@angular/common/http';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { LeftMenuComponent } from './left-menu/left-menu.component';
     LeftMenuComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
